@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SelectedColor
-  m_Shader: {fileID: 4800000, guid: 9a53a5a69862bd2439dd043eca0af09a, type: 3}
+  m_Name: UI-CompositShader1
+  m_Shader: {fileID: 4800000, guid: 9163197cbe88dff44a6c7b5e44362ac1, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -41,12 +41,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _ColorMask: 15
+    - _Composition: 1
     - _EnableExternalAlpha: 0
-    - _Hue: 0.017190622
-    - _Saturation: 0.8696019
-    - _Value: 0.9041504
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.8079714, g: 0.8490566, b: 0.26032397, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
