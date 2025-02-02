@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SelectedColor
-  m_Shader: {fileID: 4800000, guid: 9a53a5a69862bd2439dd043eca0af09a, type: 3}
+  m_Name: HueSelectorCircle
+  m_Shader: {fileID: 4800000, guid: 8eaf62fd60571ac4e9a4392caedc4de8, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -42,11 +42,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
-    - _Hue: 0
-    - _Saturation: 0
-    - _Value: 0
+    - _VoidRadius: 0.3
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Center: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

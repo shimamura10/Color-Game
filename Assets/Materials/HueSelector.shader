@@ -2,7 +2,6 @@ Shader "Unlit/HueSelector"
 {
     Properties
     {
-        _Center ("Center Point", Vector) = (0.5, 0.5, 0, 0)
         _VoidRadius ("Void Radius", Range(0, 0.5)) = 0.3
     }
     SubShader
@@ -50,12 +49,11 @@ Shader "Unlit/HueSelector"
                 return o;
             }
 
-            float4 _Center;
             float _VoidRadius;
             
             fixed4 frag (v2f i) : SV_Target
             {
-                float2 uv = i.uv - _Center.xy;
+                float2 uv = i.uv - float2(0.5, 0.5);
 
                 float dist = length(uv);
                 if (dist < _VoidRadius || dist > 0.5)
